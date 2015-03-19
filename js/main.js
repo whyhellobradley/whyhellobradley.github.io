@@ -1,1 +1,220 @@
-var app=function(){function a(){x.click(function(a){a.preventDefault(),r.toggleClass("nav-is-open")}),setTimeout(function(){w.addClass("can-transition")},1);var a=function(){u>10?r.addClass("is-scrolled"):r.removeClass("is-scrolled"),window.requestAnimationFrame(a)};a()}function b(){q.resize(function(){o=w.width(),p=v.find(".container").width(),w.css("transform","translateX(-"+(p/2-o/2)+"px)")}).resize();var a=function(){u>10&&t>y?(v.removeClass("logo-hidden"),w.css("transform","translateX(0)")):t>y?(v.addClass("logo-hidden"),w.css("transform","translateX(-"+(p/2-o/2)+"px)")):w.removeAttr("style"),window.requestAnimationFrame(a)};a()}function c(){var a=$(".interactive-logo"),b=$(".cover-footer"),c=v.outerHeight(!0),d=b.outerHeight(!0);q.resize(function(){c=v.outerHeight(!0),d=b.outerHeight(!0),a.css("height",s-d-c)}).resize()}function d(){function a(){e.attr("height",f),28>=f&&(f+=2,c=requestAnimationFrame(a))}function b(){e.attr("height",f),f>=2&&(f-=2,c=requestAnimationFrame(b))}var c,d=$("#js-down-arrow"),e=d.find("#down-arrow-fill"),f=0;$(".down-arrow").hover(function(){cancelAnimationFrame(c),c=requestAnimationFrame(a)},function(){cancelAnimationFrame(c),c=requestAnimationFrame(b)}),$("#js-down-btn").on("click",function(){$("html, body").animate({scrollTop:s-v.height()},500)})}function e(a,b,c,d){return(a/=d/2)<1?c/2*a*a+b:-c/2*(--a*(a-2)-1)+b}function f(a,b,c){var d=$(a);d.length>0&&d.each(function(){function a(a){var b=function(){switch(f=i/j,a){case"in":g=1>=f,i++;break;case"out":g=f>=0,i--}if(g){for(var c=0;c<m.length;c++){var h=0-n[c];m[c].style.strokeDashoffset=e(f,n[c],h,1)}d=window.requestAnimationFrame(b)}};b()}for(var d,f,g,h,i=0,j=c,k=$(this).find("svg"),h=k.find("path"),m=new Array,n=new Array,o=0;o<h.length;o++)m[o]=h[o],l=m[o].getTotalLength(),n[o]=l,m[o].style.strokeDasharray=l+" "+(l+2),m[o].style.strokeDashoffset=l;"hover"==b?$(this).hover(function(){window.cancelAnimationFrame(d),a("in")},function(){window.cancelAnimationFrame(d),a("out")}):a("in")})}function g(a,b){var c=$(a),d=c.find("svg > g");d.length>0&&d.each(function(a){for(var c,d,f=$(this),g=0,h=b,i=f.find("path"),j=new Array,k=new Array,m=0;m<i.length;m++)j[m]=i[m],l=j[m].getTotalLength(),k[m]=l,j[m].style.strokeDasharray=l+" "+(l+2),j[m].style.strokeDashoffset=l;var n=function(){if(d=g/h,1>=d){g++;for(var a=0;a<j.length;a++){var b=0-k[a];j[a].style.strokeDashoffset=e(d,k[a],b,1)}c=window.requestAnimationFrame(n)}else window.cancelAnimationFrame(c),j=[],lengths=[]};setTimeout(function(){n()},750*a)})}function h(){q.load(function(){$(".interactive-container").addClass("has-loaded"),app.drawSvgGroups(".interactive-container",50)}),$("#interactive-refresh").hover(function(){app.drawSvgGroups(".interactive-container",50)},function(){})}function i(){var a=$("#js-monkeys"),b=["toss","banana","badgers","monkeys","damn","flying fig","duck"],c=0;t>y&&setInterval(function(){a.text(b[c]),c<b.length?c++:c=0},600)}function j(){var a,b,c=$("#video-player"),d=c.find(".video-container"),e=c.find("iframe"),f=e.attr("src").split("?")[0];q.resize(function(){t*(9/16)>s-120?(b=s-120,a=b*(16/9),d.css({width:a,height:b})):(a=t-40,b=a*(9/16),d.css({width:a,height:b}))}).resize(),$("#js-play-btn").on("click",function(a){a.preventDefault(),c.fadeIn(500).addClass("open");var b={method:"play"};e[0].contentWindow.postMessage(JSON.stringify(b),f)}),$("#js-close-btn").on("click",function(a){a.preventDefault(),c.removeClass("open").fadeOut(500);var b={method:"pause"};e[0].contentWindow.postMessage(JSON.stringify(b),f)})}function k(a,b,c){c||(c=window.location.href);var d=new RegExp("([?&])"+a+"=.*?(&|#|$)(.*)","gi");if(d.test(c)){if("undefined"!=typeof b&&null!==b)return c.replace(d,"$1"+a+"="+b+"$2$3");var e=c.split("#");return c=e[0].replace(d,"$1$3").replace(/(&|\?)$/,""),"undefined"!=typeof e[1]&&null!==e[1]&&(c+="#"+e[1]),c}if("undefined"!=typeof b&&null!==b){var f=-1!==c.indexOf("?")?"&":"?",e=c.split("#");return c=e[0]+f+a+"="+b,"undefined"!=typeof e[1]&&null!==e[1]&&(c+="#"+e[1]),c}return c}function m(){var a=$(".filter"),b=a.find("select");b.selectOrDie(),b.change(function(){$this=$(this);var a=$this.data("query"),c=$this.val(),d=window.location.search,e=k(a,c);d.indexOf(a+"="+c)<1&&(window.location=e,b.selectOrDie("disable"))})}function n(){a(),q.scroll(function(){u=q.scrollTop()}),q.resize(function(){s=q.height(),t=q.width()})}var o,p,q=$(window),r=$("body"),s=q.height(),t=q.width(),u=q.scrollTop(),v=$("#js-header"),w=$("#js-nav"),x=$("#js-nav-trigger"),y=640;return{init:n,homeNav:b,videoPlayer:j,arrowAnim:d,monkeys:i,drawSvg:f,drawSvgGroups:g,initInteractive:h,resizeInteractive:c,initFilters:m}}();
+	$(document).ready(function(){
+  
+  setTimeout(function(){
+    
+    $("#name").removeClass("larger");
+
+    $("#name span").each(function(){
+      $(this).css("-webkit-transition-delay",$(this).data("delay")+"ms").css("transition-delay",$(this).data("delay")+"ms");
+      $(this).addClass("visible");
+    });
+    
+	}, 1000);    
+  
+});
+
+	function openSchool(){
+	$('.school-container li .school-block').click(function(){
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');
+
+			var setLeftPos 	= $('.school-container li .school-block.active').position().left,
+				setRightPos = -setLeftPos + $('.school-container').width() - $(this).width(),
+				schoolBlock = $(this);
+				state		= $(this).children('.state');
+
+			$(schoolBlock).css('left', setLeftPos);
+			$(schoolBlock).css('right', setRightPos);
+
+				$(schoolBlock).animate({
+					'bottom': '0',
+					'top': '0',
+					'min-width': ''
+				},{duration: 250, queue: false});
+				$(schoolBlock).animate({
+					'left': '0',
+					'right': '0'
+				},{duration:250, queue: false});
+				$(state).animate({
+					width: '40%'
+				},{duration:250, queue: false});
+
+				setTimeout(function(){
+					$('.schools').css('width','59%');
+					$('.school-list').addClass('fade');
+					$('.closeSchool').addClass('fade');
+				},300);
+
+
+			$('.closeSchool').click(function(){
+				$('.school-container li .school-block.active').dequeue().animate({
+					'bottom': '100%',
+					'top': '0',
+					'min-width': '200px',
+					'left': setLeftPos,
+					'right': setRightPos
+				},250, function(){
+					$('.school-container li .school-block.active').removeClass('active');
+					var setLeftPos = 0;
+					var setRightPos = 0;
+
+				});
+				$(state).animate({
+					width: '96%'
+				},{duration:250, queue: false});
+
+				$('.schools').css('width','1%');
+				$('.school-list').removeClass('fade');
+				$('.closeSchool').removeClass('fade');
+				$('.map').removeClass('slide');
+			});
+		}else {
+			console.log('doesnt');
+		}
+	});
+
+	$('.address').click(function(){
+		$('.map').addClass('slide');
+		$('.slide').click(function(){
+			$('.map').removeClass('slide');
+		});
+	});
+
+}
+
+
+function functionInit() {
+	openSchool();
+}
+
+$(function() {
+	functionInit();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+jQuery(function() {
+  $ = jQuery;
+  $(window).load( function() { $(".external-link").unbind("click"); }); 
+
+  //pricing
+    $(document).scroll(function(){
+        document_top = $(document).scrollTop()-1000;
+        event_wapper_top = $("#level-two").position().top-1110;
+        if(document_top<event_wapper_top){
+            degree = (360/event_wapper_top)*(document_top);
+            event_animate_num = event_wapper_top - document_top;
+            event_animate_alpha = (1/event_wapper_top)*(document_top);
+            $("#level-two .content span").css({
+                        '-webkit-transform': 'rotate(' + degree + 'deg)',
+                        '-moz-transform': 'rotate(' + degree + 'deg)',
+                        '-ms-transform': 'rotate(' + degree + 'deg)',
+                        '-o-transform': 'rotate(' + degree + 'deg)',
+                        'transform': 'rotate(' + degree + 'deg)',
+            });
+            $("#level-two .content").css({
+                        'opacity':event_animate_alpha
+            });
+        }else{
+            $("#level-two .content span").css({
+                        '-webkit-transform': 'rotate(' + 360 + 'deg)',
+                        '-moz-transform': 'rotate(' + 360 + 'deg)',
+                        '-ms-transform': 'rotate(' + 360 + 'deg)',
+                        '-o-transform': 'rotate(' + 360 + 'deg)',
+                        'transform': 'rotate(' + 360 + 'deg)',
+            });
+            $("#level-two .content").css({
+                        'opacity':1
+            });
+        }
+    });
+    //blog
+    $(document).scroll(function(){
+        document_top = $(document).scrollTop()-2000;
+        event_wapper_top = $("#blog").position().top-2110;
+        if(document_top<event_wapper_top){
+            event_animate_num = event_wapper_top - document_top;
+            event_animate_alpha = (1/event_wapper_top)*(document_top);
+            $("#blog .image").css({'left': -event_animate_num,'opacity':event_animate_alpha});
+            $("#blog article").css({'left':event_animate_num,'opacity':event_animate_alpha});
+        }else{
+            $("#blog .image").css({'left': 0,'opacity':1});
+            $("#blog article").css({'left':0,'opacity':1});
+        }
+    });
+    //contact
+    $(document).scroll(function(){
+        document_top = $(document).scrollTop()-3000;
+        event_wapper_top = $("#contact").position().top-3110;
+        if(document_top<event_wapper_top){
+            event_animate_alpha = (1/event_wapper_top)*(document_top);
+            $("#contact p, #map").css({'opacity':event_animate_alpha});
+        }else{
+            $("#contact p, #map").css({'opacity':1});
+        }
+    });
+});
+//google map
+function initialize(){
+    //define map
+    var map;
+    //lat lng
+    myLatlng = new google.maps.LatLng(63.4304895, 10.3950420);
+    //define style
+    var styles = [
+        {
+            //set all color
+            featureType: "all",
+            stylers: [{ hue: "#35a9d8" }]
+        },
+        {
+            //hide business
+            featureType: "poi.business",
+            elementType: "labels",
+            stylers: [{ visibility: "off" }]
+        }
+    ];
+    //map options
+    var mapOptions = {
+        zoom: 14,
+        center: myLatlng ,
+        mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']} ,
+        panControl: true , //hide panControl
+        zoomControl: true , //show zoomControl
+        mapTypeControl: false , //hide mapTypeControl
+        scaleControl: false , //hide scaleControl
+        streetViewControl: true , //hide streetViewControl
+        overviewMapControl: false , //hide overviewMapControl
+        scrollwheel: false, //disable overviewMapControl
+    }
+    //adding attribute value
+    map = new google.maps.Map(document.getElementById('contact-map'), mapOptions);
+    var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
+    //add marker
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Welcome to Trondheim'
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize); 
+google.maps.event.addDomListener(window, 'resize', initialize); 
+
+
+
+
+
+
+

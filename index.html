@@ -1,986 +1,433 @@
-<!doctype html>
-<html class="no-js" lang="en-GB">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>bradley.dean</title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="home" href="http://Bradley Dean Jones.co/">
-	<link rel="shortcut icon" href="images/favicon.ico"> 
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/form.css">
-	<link rel="stylesheet" href="css/bradleyjones.css">
-		<meta name="description" content="We&#039;re an ethically driven creative agency. We make nice things, but only to solve the serious stuff">
-	<meta name="keywords" content="nice and serious, creative agency, creative studio, sustainability, environment, films, animation, web, websites, digital">
-
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://bradleyjones.co/">
-	<meta property="og:title" content="Bradley Dean Jones">
-	<meta property="og:site_name" content="Bradley Dean Jones">
-	<meta property="og:description" content="The creations of Bradley Dean Jones">
-	<meta property="og:image" content="http://niceandserious.com/assets/images/logos/fb-profile.jpg">
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@niceandserious">
-	<meta name="twitter:title" content="Nice and Serious">
-	<meta name="twitter:description" content="We&#039;re an ethically driven creative agency. We make nice things, but only to solve the serious stuff">
-	<meta name="twitter:image" content="http://niceandserious.com/assets/images/logos/fb-profile.jpg">
-	<script src="http://niceandserious.com/js/modernizr.js"></script>
-<script src="js/less.js" type="text/javascript"></script>
-<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
-  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script type="text/javascript">
-</script>
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Carrois+Gothic+SC:400,400italic,700normal,700italic|Gruppo:400,400italic,700normal,700italic|Playfair+Display:400italic|Source+Sans+Pro:400,400italic,700normal,700italic|Voltaire:400"/>
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<style>
-	
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
-
-
-
-
-
-* {
-    text-rendering:optimizeLegibility;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
-}
-
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight:200;
-    font-size:1.125em;
-    line-height:1.5
-}
-
-
-.entypo-mail:before {
-  font-family: 'Source Sans Pro', sans-serif;
-    font-weight:200;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-.form-cool {
-	float:left;width:85%;
-}
-.coolform {
-  font-size: 2em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight:200;
-  width: 50%;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text-cool {
-  background: none;
-  border: 1px solid black;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  width: 100%;
-  transition: all .3s ease-in-out;
-}
-.text-cool2 {
-  background: none;
-  border: 1px solid black;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  width: 115%;
-  transition: all .3s ease-in-out;
-}
-.text-cool2:focus {
-  border-width: 3px;
-  outline: none;
-}
-.text-cool:focus {
-  border-width: 3px;
-  outline: none;
-}
-
-.entypo-mail {
-  background: none;
-  color: #000;
-  border: 0;
-  border-radius: 100%;
-  position: absolute;
-
-}
-
-::-webkit-input-placeholder {
-  color: black;
-  opacity: 0;
-  animation: fade 10s forwards;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-	.placeholdering {
-		width: 100%;
-		position: inherit;
-		height:10px;
-		padding: 50px
-	}		
-	.programmingbar {
-	  float: left;
-	  width: 42.5%;
-	}
-	.photographybar {
-	  float: right;
-	  width: 42.5%;
-	}
-	.skillset {
-	  font-size: 18px;
-	  float: right;
-	  line-height: 95%;
-	  color:black;
-	  width: 15%;
-	}
-	@media screen and (max-width: 800px) {
-	  .programmingbar {
-	    float: center;
-	    width: 100%;
-	  }
-	  .photographybar {
-	    float: center;
-	    width: 100%;
-	  }
-	  .skillset {
-	    font-size: 30px;
-	    float: none;
-	    width: 100%;
-	  }
-	  #flipping {
-	    -ms-transform: rotate(0deg);
-	    -webkit-transform: rotate(0deg);
-	    transform: rotate(0deg);
-	  }
-	}
-	#flipping {
-	  -ms-transform: rotate(180deg);
-	  -webkit-transform: rotate(180deg);
-	  transform: rotate(180deg);
-	}
-	.clearfix,
-	.clearfix:before,
-	.clearfix:after {
-	  display: block;
-	  content: " ";
-	  clear: both;
-	  zoom: 1;
-	}
-	* {
-	  -webkit-box-sizing: border-box;
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box;
-	}
-
-	/* Bar Graph Class */
-	.barGraph {
-	  position: relative;
-	  width: 100%;
-	  height: auto;
-	  margin-bottom: 50px;
-	}
-	.graph {
-	  position: relative;
-	  list-style-type: none;
-	  padding: 0;
-	  margin: 0;
-	  width: calc(99.9%);
-	  left: 0.1%;
-	}
-	.graph-barBack {
-	  border-radius: 2px;
-	  background: rgba(243,   111,   107, 0.02);
-	  margin-bottom: 5px;
-	  display: block;
-	}
-	.graph-bar {
-	  background-color: rgba(243, 111, 107, 0.61);
-	  -webkit-transition: all 1s ease-out;
-	  -moz-transition: all 1s ease-out;
-	  -o-transition: all 1s ease-out;
-	  transition: all 1s ease-out;
-	  border-radius: 2px;
-	  cursor: pointer;
-	  margin-bottom: 10px;
-	  position: relative;
-	  z-index: 9999;
-	  display: block;
-	  height: 20px;
-	  width: 0%;
-	}
-	.graph-bar:hover {
-	  -webkit-transition: all 0.5s ease;
-	  -moz-transition: all 0.5s ease;
-	  -o-transition: all 0.5s ease;
-	  transition: all 0.5s ease;
-	  background: rgba(191, 84, 80, 0.58);
-	}
-	.graph-bar:last-child {
-	  margin-bottom: 0;
-	}
-	.graph-bar:after {
-	  position: absolute;
-	  display: none;
-	  font-size: 12px;
-	  border-radius: 4px;
-	  background: rgba(0, 0, 0, 0.5);
-	  color: #fff;
-	  line-height: 20px;
-	  height: 20px;
-	  padding: 0 10px;
-	  margin-left: 5px;
-	  left: 100%;
-	  top: 0;
-	}
-	.graph-bar:hover:after {
-	  display: block;
-	}
-	.graph-legend {
-	  position: absolute;
-	  margin-right: 10px;
-	  left: 10px ;
-	  z-index: 9999;
-	  color: white;
-	}
-
-
-	.whatido {
-		float:right;margin-top:0px;padding:30px;width:33%;font-size:20px;
-	}
-	.mypicture {
-		width:35%;float:right;padding:100px; padding-top:30px; padding-bottom:5px;height:300px;
-	}
-	.whatido2 {
-		display: none;
-	}
-	.hero-content {
-	  position: absolute;
-	  right: 0;
-	  left: 0;
-	  top: 15em;
-	  padding: 30px;
-	  margin: auto;
-	  width: 70%;
-	  text-align: center;
-
-	}
-
-	@media screen and (max-width: 900px) {
-		.hero-content {
-		  position: absolute;
-		  right: 0;
-		  left: 0;
-		  top: 15em;
-		  padding: 1px;
-		  margin: auto;
-		  width: 85%;
-		  text-align: center;
-
-		}
-
-	}
-    @media screen and (max-width: 600px) {
-		#piechartz {
-			width:0px;
-			height: 0%;
-		}			
-		#piechartz  {
-	        display: none;
-	    }
-
-
-		.mypicture {
-			display: none;
-		}
-	    .whatido {	
-			width:100%;
-			padding:0px;
-			background-color:red;
-			font-size:30px;
-			}
-		.whatido2 {
-			display: inherit;
-			width:100%;
-			padding:0px;
-			background-color:blue;
-			font-size:30px;
-		}
-.form-cool {
-	float:center;width:100%;
-}
-.extraspaces {
-	display: none;
-}
-	.placeholdering {
-		display: none;
-	}		
-.text-cool2 {
-  background: none;
-  border: 1px solid black;
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  width: 100%;
-  transition: all .3s ease-in-out;
-}
-	}
-</style>
-</head>
-<body  id="top" class="button-style-outline">
-	<div class="main">
-	<div class="content">
-			</div>
-
-
-	</div>
-	<!--[if lt IE 9]>
-		<div class="browse-happy">
-	    <p>Sorry! We've stopped supporting your browser :-(</p>
-	    <p>If you'd like to see some of our work, drop us an email at <a href="mailto:iambradleydean@gmail.com">iambradleydean@gmail.com</a></p>
-    </div>
-<![endif]-->	
-	<header class="global logo-hidden" id="js-header">
-	
-	<div class="header-background"></div>
-	
-	<div class="container">
-		<h1>
-			<a href="#section_four">
-				
-				<span style="font-size: 55px">bradley.</span><span style="font-size: 45px">dean</span>
-				
-				<!---<img src="images/logo-black.png">--->
-			</a>
-		</h1>
-
-		<a href="#0" class="nav-trigger" id="js-nav-trigger">
-			Open Menu
-			<span class="icon-menu"></span>
-		</a>
-		
-		
-	
-
-
-	<nav role="navigation" id="js-nav">
-		<div class="nav" id="nav">
-			<ul>
-				<li><a class="link" href="#top">Home</a></li>
-				<li><a class="link" href="#section_one">About</a></li>
-				<li><a class="link" href="#section_two">Portfolio</a></li>
-				<li><a class="link" href="#section_three">Journal</a></li>
-				<li><a class="link" href="#section_four">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-
-
-
-	</div>
-
-</header>
-
-
-		
-	<section class="cover">
-
-		<div class="interactive-logo">
-			<div class="interactive-container">
-				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-												
-			<div id="hero">
-			<a href="#LINKtoIMAGE">
-			    <div id="hero-bg"></div>
-		    </a>
-			    <div class="hero-content">
-					<img src="images/logo.png">
-			    </div>
-			  </div>
-												  
-
-			<a href="#section_three">
-				<br><span class="right-arrow"></span>
-			</a>
-			<button class="down-arrow" id="js-down-btn">
-				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-			<svg version="1.1" id="js-down-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
-			<g>
-				<defs>
-					<polygon id="down-arrow-path" points="29.9,25.9 20,34.1 9.9,25.9 9.9,5.9 29.9,5.9"/>
-				</defs>
-				<clipPath id="down-arrow-path_2_">
-					<use xlink:href="#down-arrow-path"  overflow="visible"/>
-				</clipPath>
-				<rect id="down-arrow-fill" class="down-arrow-fill" x="9.9" y="5.9" clip-path="url(#down-arrow-path_2_)" fill="#ffffff" width="20" height="0" />
-			</g>
-			<polygon class="down-arrow-outline" id="down-arrow-path" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="29.9,25.9 20,34.1 9.9,25.9 9.9,5.9 29.9,5.9 "/>
-			</svg>
-
-
-
-
-			</button>
-			</div>
-			<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-		</div>
-
-
-
-
-
-
-
-
-
-	
-		
-		
-		
-		
-		
- 
-
-
-
-	</section>
-	<div class="container" style="background-size: 80px 60px; ">
-		<a id="section_one" class="anchor"></a><span class="littleheaders1">ABOUT ME</span><span class="littleheaders2"><center>ABOUT ME</center></span><br>
-
-		
-
-<div class="aboutmediv1"><p><a href="#section_four"><img src="images/myself.gif" width="300px" style="-moz-border-radius: 150px;border-radius: 150px;float: right;padding-left:50px;padding-right:50px;"></a>
-<div >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-</p></div>
-
-<div class="aboutmediv2"><p><a href="#section_four"><img src="images/myself.gif" width="300px"</a>
-<div ><center>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</center></div>
-</p></div>
-		
-		<br><br><br>
-		<span>
-<div style="font-family: 'Source Sans Pro', sans-serif;font-size: 10pt;font-weight: 200;">
-<div class="programmingbar">
-<div class="wrap">   
-  <h2 style="text-align:right;">Programming Experience</h2>
-  <div class="barGraph">
-    <ul class="graph">
-      <span class="graph-barBack" id="flipping">
-        <li class="graph-bar" data-value="100">
-          <span class="graph-legend" id="flipping" style="font-size:20px;margin-top: -4px;">Landscape</span> 
-        </li>
-      </span>  
- 
-      <span class="graph-barBack" id="flipping">     
-        <li class="graph-bar" data-value="95">
-          <span class="graph-legend" id="flipping" style="font-size:20px;margin-top: -4px;">Wedding</span>
-        </li>
-      </span>
-
-      <span class="graph-barBack" id="flipping">    
-        <li class="graph-bar" data-value="50">
-          <span class="graph-legend" id="flipping" style="font-size:20px;margin-top: -4px;">Couple/Engagment</span>
-        </li>
-      </span>
-
-      <span class="graph-barBack" id="flipping">    
-        <li class="graph-bar" data-value="30">
-          <span class="graph-legend" id="flipping" style="font-size:20px;margin-top: -4px;">Senior</span>
-        </li>
-      </span>
-
-      <span class="graph-barBack" id="flipping">    
-        <li class="graph-bar" data-value="25">
-          <span class="graph-legend" id="flipping" style="font-size:20px;margin-top: -4px;">Family</span>
-        </li>
-      </spa>      
-    </ul>
-  </div>
-    <div class="lines">
-      <div class="lines-horz"></div>
-      <div class="lines-horz"></div>
-      <div class="lines-horz"></div>
-      <div class="lines-horz"></div>      
-      <div class="lines-vert"></div>
-      <div class="lines-vert"></div>
-      <div class="lines-vert"></div>
-      <div class="lines-vert"></div>
-    </div>
-  </div>  
-</div>
-<div class="photographybar">
-<div class="wrap">    
-  <h2>Programming Experience</h2>
-  <div class="barGraph">
-    <ul class="graph">
-      <span class="graph-barBack">
-        <li class="graph-bar" data-value="100">
-          <span class="graph-legend" style="font-size:20px;margin-top: -4px;">HTML</span>
-        </li>
-      </span>  
- 
-      <span class="graph-barBack">     
-        <li class="graph-bar" data-value="95">
-          <span class="graph-legend" style="font-size:20px;margin-top: -4px;">CSS</span>
-        </li>
-      </span>
-
-      <span class="graph-barBack">    
-        <li class="graph-bar" data-value="50">
-          <span class="graph-legend" style="font-size:20px;margin-top: -4px;">JavaScript</span>
-        </li>
-      </span>
-
-      <span class="graph-barBack">    
-        <li class="graph-bar" data-value="30">
-          <span class="graph-legend" style="font-size:20px;margin-top: -4px;">Python</span>
-        </li>
-      </span>
-
-      <span class="graph-barBack">    
-        <li class="graph-bar" data-value="25">
-          <span class="graph-legend" style="font-size:20px;margin-top: -4px;">PHP</span>
-        </li>
-      </spa>      
-    </ul>
-  </div>
-  
-  
-    
-    <div class="lines">
-      <div class="lines-horz"></div>
-      <div class="lines-horz"></div>
-      <div class="lines-horz"></div>
-      <div class="lines-horz"></div>      
-      <div class="lines-vert"></div>
-      <div class="lines-vert"></div>
-      <div class="lines-vert"></div>
-      <div class="lines-vert"></div>
-    </div>
-  </div>   
-</div>
-</div> 
-
-<div class="skillset"> 
-  <center><br>
-    <font style="font-size:25px;font-weight: 200;color:#000000">Skills</font><br>
-    Photoshop<br>
-    Dreamweaver<br> 
-    After Effects<br> 
-    Illustrator<br> 
-    InDesign<br>
-    Final Cut Pro<br>
-    Word<br>
-    Spread Sheets
-  </center>
-</div>
-</div>
-		</span>
-	</div>
-	
-	<div class="container">
-		<hr>
-		<a id="section_two" class="anchor"></a><span class="littleheaders1">PORTFOLIO</span><span class="littleheaders2"><center>PORTFOLIO</center></span><br>
-		<section class="latest"> 
-				<a href="#" class="latest-featured">
-				  <div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);">
-				  </div>
-					<div class="overlay">
-						<p>TEST</p>
-					</div>
-				</a>
-						
-			<div class="latest-text">
-				<div class="border">
-					<p>0 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</div>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>																					
-			<div class="latest-text">
-				<div class="border">
-					<p>4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</div>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>5 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>											
-			<a href="#" class="latest-work-wide">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>6 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>						
-			<a href="#" class="latest-work-wide">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>7 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<center><a href="#"><span class="loadmore" id="buttoncool">READ MORE PORTFOLIO UPDATES</span></a></center>		
-		</section>
-	<hr>
-	</div>
-	<div class="container">
-		<a id="section_three" class="anchor"></a><span class="littleheaders1">JOURNAL</span><span class="littleheaders2"><center>JOURNAL</center></span><br><br>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>8 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>9 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<div class="latest-text">
-				<div class="border">
-					<p>4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</div>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>11 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<a href="#" class="latest-work-wide">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>12 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-			<a href="#" class="latest-work">
-				<div class="latest-image" style="background-image: url(http://www.aviatorcameragear.com/wp-content/uploads/2012/07/placeholder_2.jpg);"></div>
-				<div class="overlay">
-					<p>13 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-			</a>
-		<section class="latest">							
-
-<center><a href="#"><span id="buttoncool">READ MORE JOURNAL UPDATES</span></a></center>
-									
-					</section>
-										
-
-			 
-	</div>
-	
-	<div class="container" >  
-		<hr>
-		<a id="section_four" class="anchor"></a><span class="littleheaders1">CONTACT ME</span><span class="littleheaders2"><center>CONTACT ME</center></span><br><br>
-		<div style="width: 100%">
-			<div class="leftcontact">
-				<center>
-					Email me <br><a href="MAILTO:iambradleydean@gmail.com">iambradleydean@gmail.com</a><br>or call me<br><a href="TEL:+17656248690">765-624-8690</a>
-				</center>
-			</div>
-			<div class="rightcontact">
-				<center>
-					<a href="https://www.facebook.com/bradleydeanjonesphotography">Facebook</a><br>
-					<a href="https://twitter.com/iambradleydean">Twitter</a><br>
-					<a href="http://instagram.com/iambradleydean">Instagram</a><br>
-					<a href="https://www.linkedin.com/in/bradleydeanjones">LinkedIn</a><br>
-					<a href="https://www.youtube.com/user/iambradleydean">Youtube</a><br>
-				</center>
-				
-			</div>
-		</div>
-		<br>
-<br>
-		<div class="-wrapper">
-		    <div class="-inner-wrapper">
-		      <form autocomplete="on" action="email.php" method="POST" onsubmit="return (function() { Y.use
-		      ('squarespace--submit', 'node',
-		      function (Y) { (new Y.Squarespace.Submit({ Node: Y.Node() })).submit('53c2495ee4b0a643a8fee519', '51bfe18be4b033abfa09639b') }); return false;})(this)">
-		          		        
-		      </>
-		
-		    </div>
-		
-		</div>
-			<div class="placeholdering"> 
-		</div>
-
-
-			
-    
-
-		       <center>
-			<form class="coolform" action="email.php">
-				<div class="form-cool">
-Full Name: <input type="text" id="form-name" class="text-cool2"><br>
-Email Address: <input type="text" class="text-cool" name="email-address" id="email-address" placeholder="enter email"><br>
-Message: <input type="text" id="form-message" class="text-cool"><br></div>
-			  <div id="coolcoolbuttom" class="-button-wrapper -button-wrapper--align-left"><div class="extraspaces"><br><br><br><br></div>
-		          <input class="button sqs-system-button sqs-editable-button" id="coolassbutton" type="submit" value="Submit"/></div>       
-			</form>   
-		</center>		       
-				</div>
-				
-	
-          
-    
-          
-          
-        </section>
-        
-    
-      
-
-
-
-
-	</div>
-	
-	
-	
-	
-	
-	<!---
-					
-CONNECT WORDPRESS FOR UPDATES
-GET WORDPRESS SO IT POSTS STRAIGHT TO TUMBLR
-FINISH CONTACT ME AREA
-FINISH ABOUT ME AREA
-FINISH JOURNAL AREA
-FINISH PORTFOLIO AREA 
-lynda has wordpress stuff 
-http://codepen.io/VincentGarreau/pen/pnlso
-https://docs.google.com/document/d/1mS_Z2_wkvHz1HBo6LJkojBbfZjdUqRGVDzsQNRV6A90/edit#
-http://jasonalvis.co.uk/about/
-http://www.owlcarousel.owlgraphic.com/
-https://github.com/potomak/jquery-instagram
-http://lab.adrianquevedo.com/jquery-spectragram/
-http://pongstr.github.io/pongstagr.am/#examples
-http://codepen.io/ZonFire99/pen/njdls
-https://github.com/miniJs/miniFeed
-http://www.minijs.com/plugins/10/alert
-http://codepen.io/rafaelrinaldi/pen/LEYyKZ
-https://github.com/gwu-libraries/social-feed-manager
---->
-	
-	<div class="container">
-<br><br> 		<HR>
-		<font size="100pt">
-		<br>Instagram @iambradleydean</font><br>
-		<center>
-<!-- INSTANSIVE WIDGET --><script src="http://instansive.com/widget/js/instansive.js"></script><iframe src="http://instansive.com/widgets/abef7faf16781f25d92f7f19440f4845324d7fd6.html" scrolling="no" allowtransparency="true" class="instansive-widget" id="iwidget1"></iframe>
-
-<!-- INSTANSIVE WIDGET --><script src="http://instansive.com/widget/js/instansive.js"></script><iframe src="http://instansive.com/widgets/b00aa86f12ff2fbf926b68c35035527b9a282098.html" scrolling="no" allowtransparency="true" class="instansive-widget" id="iwidget2"></iframe>
-
-		</center>
-
-	</div><br>	
-	
-
-
-	<footer class="global">
-		<div class="container">
-	
-
-<div style="-ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);transform: rotate(180deg);">
-	<a href="#top">		
-<button class="down-arrow2" id="js-down-btn">
-	<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="js-down-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
-<g>
-	<defs>
-		<polygon id="down-arrow-path2" points="29.9,25.9 20,34.1 9.9,25.9 9.9,5.9 29.9,5.9"/>
-	</defs>
-	<clipPath id="down-arrow-path_2_">
-		<use xlink:href="#down-arrow-path2"  overflow="visible"/>
-	</clipPath>
-	<rect id="down-arrow-fill2" class="down-arrow-fill2" x="9.9" y="5.9" clip-path="url(#down-arrow-path_2_)" fill="#000" width="20" height="0" />
-</g>
-<polygon class="down-arrow-outline2" id="down-arrow-path2" fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10" points="29.9,25.9 
-	20,34.1 9.9,25.9 9.9,5.9 29.9,5.9 "/>
-</svg>
-</button>
-	</a>
-</div>		
-			
-			
-			
-			<ul class="footer-links">
-				<li><a href="mailto:iambradleydean@gmail.com">iambradleydean@gmail.com</a></li>
-				<li><a href="https://www.facebook.com/bradleydeanjonesphotography" target="_blank">Facebook</a></li>
-				<li><a href="https://www.twitter.com/iambradleydean" target="_blank">Twitter</a></li>
-				<li class="legal">&copy; 2014 Bradley Dean Jones</li>
-			</ul>
-		</div>
-	</footer>
-	
+	<title>
+		why hello, bradley
+	</title>
+    <link rel="shortcut icon" href="pics/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width">
+	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/vendor.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> 
+	<link rel="stylesheet" href="css/mediaqueries.css"> 
+	<link rel="stylesheet" href="css/ticker.css"> 
+	<script src="js/modernizr.js"></script> 
 
-	<script>
-  updatePosition = function() {
-	  var heroBg = document.getElementById('hero-bg');
-	  var newPos = window.scrollY / 2;
-	  translateY(heroBg, newPos);
-	};
+<style type="text/css">
+	* {
+	box-sizing: border-box;
+}
 
-	function translateY(elm, value) {
-	  var translate = 'translateY(' + value + 'px';
-	  elm.style['-webkit-transform'] = translate;
-	  elm.style['-moz-transform'] = translate;
-	  elm.style['-ms-transform'] = translate;
-	  elm.style['-o-transform'] = translate;
-	  elm.style.transform = translate;
+.section-large, .section-small{
+	float:left;
+}
+
+.section-small {
+  float:right;
+}
+  
+  .section-long {
+    float:left;
+  }
+
+.section-small img, .section-large img, .section-long img {
+	padding: 3px;
+	width:100%;
+	float:left;
+}
+
+
+.section-small img {
+	float:left;
+}
+
+.row {
+	margin:0 auto;
+}
+
+
+@media all and (min-width: 1201px) {
+	.section-large {
+		width:800px;
+
+	}
+	.section-small, .section-long {
+		width:400px;
+
+	}
+	.row {
+		width:1200px;
+	}
+}
+
+@media all and (max-width: 1200px) and (min-width: 900px) {
+	.section-large {
+		width:600px;
+	}
+.section-small {
+  float:right;
+}
+  
+  .section-long {
+    float:left;
+  }
+  .section-small, .section-long{
+		width:300px;
+	}
+	.row {
+		width:900px;
+	}
+}
+
+@media all and (max-width: 899px) and (min-width: 620px) {
+	.section-large {
+		width:400px;
+	}
+	.section-small, .section-long {
+		width:200px;
+	}
+	.row {
+		width:600px;
+	}
+}
+
+@media all and (max-width: 619px) and (min-width: 400px) {
+
+	.section-large {
+		width:400px;
+		
 	}
 
-	$(document).ready(function() {
-	  $(window).on('scroll', updatePosition);
-	});
-	$(document).ready(function() {
-  $(window).scroll(function () { 
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 500) {
-      $('#nav_bar').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 501) {
-      $('#nav_bar').removeClass('navbar-fixed');
-    }
-  });
-});
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
+	.section-small, .section-long {
+		width:200px;
+	}
+
+	.row {
+		width:400px;
+	}
+
+}
+
+
+@media all and (max-width: 399px) and (min-width: 20px){
+	.section-large {
+		width:200px;
+	}
+	.section-small, .section-long {
+		width:200px;
+	}
+	.row {
+		width:200px;
+	}
+}
+
+
+#pho { height: 150px; background-color: #ddd }
+#pho[class] { width: 150px }
+
+
+.object-fit_cover { -o-object-fit: cover; object-fit: cover }
+
+
+
+
+</style>
+
+
+</head>
+<div id="top-bar">
+    <div id="small-logo">
+        <a href="http://bradleyjones.co/">bradley | dean | jones</a>
+    </div>
+</div>
+
+<div id="intro">
+    <div class="larger" id="name">
+<div class="ticker">
+	<section class="cd-intro">
+		<h1 class="cd-headline letters type">
+			<span>Why hello, I am</span> 
+			<span class="cd-words-wrapper waiting">
+				<b class="is-visible">bradley dean jones.</b>
+				<b>a photographer.</b>
+				<b>a designer.</b>
+				<b>a developer.</b>
+				<b>a problem-solver.</b>
+			</span>
+		</h1>
+	</section> <!-- cd-intro -->
+</div>
+    </div>
+
+    <div class="larger" id="name2"></div>
+
+    <div class="section-arrow">
+        <div class="block"></div>
+
+        <div class="triangle left"></div>
+
+        <div class="triangle right"></div>
+
+        <div class="block"></div>
+    </div>
+</div>
+
+
+<style type="text/css">
+	.mainsection {
+    margin-left:200px;
+    margin-right:200px;
+    padding-top:50px;
+    padding-left:100px;
+    padding-right:100px
+}
+
+
+</style>
+
+<section class="aboutme">
+	
+
+	<div class="aboutmediv1"><p><a href="#section_four"><div class="mememe"><img src="pics/myself.gif" style="-moz-border-radius: 150px;border-radius: 150px;float: right;padding-left:50px;padding-right:50px;width:300px;"></div></a>
+    <div >
+        I'm <i>Bradley</i>. A <a href="#section_two">photographer</a>, a designer, but most importantly a problem solver. Helping others find a solution any way I can is my goal. A wide verity of interests have captured my attention but they all go back to being something in a creative aspect. From web design, to photography, to film production, I have always had the wanted to continue my love for creating to help others solve problems and make the world a <span style="font-family: 'La Belle Aurore', cursive;"> prettier</span> place. Feel free to shoot me an <a href="#section_four">email</a>.
+    </div>
+</p></div>
+
+<div class="aboutmediv2"><p><a href="#section_four"><img class="mememe" src="pics/myself.gif" width="300px"</a>
+<div ><center><br><br>
+    I'm <i>Bradley</i>. A <a href="#section_two">photographer</a>, a designer, but most importantly a problem solver. Helping others find a solution any way I can is my goal. A wide verity of interests have captured my attention but they all go back to being something in a creative aspect. From web design, to photography, to film production, I have always had the wanted to continue my love for creating to help others solve problems and make the world a <span style="font-family: 'La Belle Aurore', cursive;"> prettier</span> place. Feel free to shoot me an <a href="#section_four">email</a>.
+    </center></div>
+</p></div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+<style type="text/css">
+
+</style>
+
+
+
+
+<section id="portfolio">
+   <div class="box-header"><h2>My Portfolio</h2></div><br>
+	<img id="pic111111" class="object-fit_cover" src="http://41.media.tumblr.com/38b5becf358059ec95967453aa8432a7/tumblr_nkpesu3sPN1up7ziwo2_1280.jpg">
+	<img id="pic222222" class="object-fit_cover" src="http://41.media.tumblr.com/326e3a4bd367164396060d9cbdd64cd9/tumblr_nkpesu3sPN1up7ziwo1_1280.jpg">
+	<img id="pic333333" class="object-fit_cover" src="http://41.media.tumblr.com/90e8a01cc293b99f3df1a5ae7ec88451/tumblr_nkktjcib5S1up7ziwo1_1280.jpg">
+	<img id="pic444444" class="object-fit_cover" src="https://scontent-ord.xx.fbcdn.net/hphotos-xpf1/t31.0-8/10750141_567485126686142_7874540454647811725_o.jpg">
+	<img id="pic555555" class="object-fit_cover" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpf1/t31.0-8/p480x480/10284824_527019790732676_1402419277157435715_o.jpg">
+	<img id="pic666666" class="object-fit_cover" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/t31.0-8/p526x296/10655336_563692217065433_4751120829286626354_o.jpg">
+	<img id="pic777777" class="object-fit_cover" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xtf1/t31.0-8/p843x403/10467091_524515600983095_866177576567310360_o.jpg">
+	</section>
+<section id="contact" class="contact"><br>
+<div class="box-header"><font size="100px;"><a href="LINKLINKLINKLINK">More photography</a></font></div>
+</section>
+
+
+<section class="mainsection">
+	<br><br><br><br>
+	TWITTER
+	<br><br><br><br><br><br><br><br><br><br>
+</section>
+
+
+
+
+<section id="contact" class="contact">
+ <div class="container-all">
+  <div class="box-row">
+   <div class="box-header"><h2>Contact</h2></div>
+   <div class="contactstuff_old">
+   <div class="contactstuff">
+		<div class="contactstuff2">
+           <p class="contactfont"><a href="http://twitter.com/whyhellobradley"><img src="pics/twitter_logo.png" style="width:27px;float:left;">&nbsp; <span style="vertical-align:-1px;">Twitter</span></a></p><br><br>
+           <p class="contactfont"><a href="http://instagram.com/whyhellobradley"><img src="pics/instagram_logo.png" style="width:22px;float:left;margin-left:3px;">&nbsp; <span style="padding-left:5px;">Instagram</span></a></p><br><br>
+           <p class="contactfont"><a href="https://www.linkedin.com/in/bradleydeanjones"><img src="http://resume.kylestev.io/img/icons/linkedin.png" style="width:30px;float:left;margin-left:-1px;">&nbsp; <span style="vertical-align:-5px;">LinkedIn</span></a></p><br><br>
+           <p class="contactfont"><a href="https://www.facebook.com/bradleydeanjonesphotography"><img src="pics/facebook_logo.png" style="width:35px;float:left;margin-left:-5px;">&nbsp; <span style="vertical-align:-5px;">Facebook</span></a></p><br><br>
+        </div>
+        <div style="float:right;margin: 0 auto;">
+           <p class="contactfont"><a href="tel:7656248690"><img src="pics/phone_logo.png" style="width:30px;float:left;">&nbsp; <span style="vertical-align:-5px;">765 624-8690</span></a></p><br><br>
+           <p class="contactfont"><a href="MAILTO:hello@bradleyjones.co"><img src="pics/email_logo.png" style="width:30px;float:left;">&nbsp; <span style="vertical-align:-1px;">hello@bradleyjones.co</span></a></p><br><br>
+           <p class="contactfont"><a href="http://bradleyjones.co/downloads/resume.pdf"><img src="http://adamjellings.com/images/resume.png" style="width:25px;float:left;">&nbsp; <span style="vertical-align:-1px;">My resume</span></a></p>
+        </div>
+   </div>
+<br><br><br>
+</div>
+  </div> 
+
+  <div class="contactstuff_new">
+  <div style="margin: 0 auto;margin-left:50px;margin-bottom:25px;">
+		<div style="margin: 0 auto;">
+           <p class="contactfont"><a href="http://twitter.com/whyhellobradley"><img src="pics/twitter_logo.png" style="width:27px;float:left;">&nbsp; <span style="vertical-align:-1px;">Twitter</span></a></p><br><br>
+           <p class="contactfont"><a href="http://instagram.com/whyhellobradley"><img src="pics/instagram_logo.png" style="width:22px;float:left;margin-left:3px;">&nbsp; <span style="padding-left:5px;">Instagram</span></a></p><br><br>
+           <p class="contactfont"><a href="https://www.linkedin.com/in/bradleydeanjones"><img src="http://resume.kylestev.io/img/icons/linkedin.png" style="width:30px;float:left;margin-left:-1px;">&nbsp; <span style="vertical-align:-5px;">LinkedIn</span></a></p><br><br>
+           <p class="contactfont"><a href="https://www.facebook.com/bradleydeanjonesphotography"><img src="pics/facebook_logo.png" style="width:35px;float:left;margin-left:-5px;">&nbsp; <span style="vertical-align:-5px;">Facebook</span></a></p><br><br>
+        </div>
+        <div style="margin: 0 auto;">
+           <p class="contactfont"><a href="tel:7656248690"><img src="pics/phone_logo.png" style="width:30px;float:left;">&nbsp; <span style="vertical-align:-5px;">765 624-8690</span></a></p><br><br>
+           <p class="contactfont"><a href="MAILTO:hello@bradleyjones.co"><img src="pics/email_logo.png" style="width:30px;float:left;">&nbsp; <span style="vertical-align:-1px;">hello@bradleyjones.co</span></a></p><br><br>
+           <p class="contactfont"><a href="http://bradleyjones.co/downloads/resume.pdf"><img src="http://adamjellings.com/images/resume.png" style="width:25px;float:left;">&nbsp; <span style="vertical-align:-1px;">My resume</span></a></p>
+        </div>
+   </div>
+ </div>
+ </div>
+
+</section>
+
+
+
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNTSMEOij97Zpc3vSSkP1pXOIWg8tH-gA&sensor=false"></script>
+<div id="mack-map">map</div>
+<section id="contact" class="contact">
+ <div class="container-all">
+  <div class="box-row">
+   <br><br><br>
+   <form action="">
+   <div class="input"><p>Your Name</p><input type="text" placeholder="Full Name"/></div>
+   <div class="input"><p>Your Email</p><input type="text" placeholder="Email"/></div>
+   <div class="input"><p>Message Subject</p><input type="text" placeholder="Subject"/></div>
+   <div class="txtarea"><p>Your Message</p><textarea placeholder="Write Your Messages"></textarea></div>
+   <div class="button"><button>Send Info</button></div>
+   </form>
+  </div>
+ </div>
+</section>
+<div class="footer">
+	Copyright © 2015 Bradley Dean Jones. All rights reserved.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+
+  function initialize() {
+
+  	var gmarkers = [];
+  	var map = null;
+  	var infowindow = null;
+
+    var styles = [
+      {
+        featureType: "administrative",
+        elementType: "all",
+        stylers: [
+          { saturation: -99 }
+        ]
+      },{
+        featureType: "landscape",
+        elementType: "all",
+        stylers: [
+          { saturation: -99 }
+        ]
+      },{
+        featureType: "poi",
+        elementType: "all",
+        stylers: [
+          { saturation: -99 }
+        ]
+      },{
+        featureType: "road",
+        elementType: "all",
+        stylers: [
+          { saturation: -99 }
+        ]
+      },{
+        featureType: "transit",
+        elementType: "all",
+        stylers: [
+          { saturation: -99 }
+        ]
+      },{
+        featureType: "water",
+        elementType: "all",
+        stylers: [
+          { saturation: -99 }
+        ]
       }
-    }
-  });
+    ];
+
+      var mapOptions = {
+        center: new google.maps.LatLng(40.207918, -85.410883),
+        zoom: 12,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false,
+        zoomControl: true,
+        styles: styles
+      };
+
+      map = new google.maps.Map(document.getElementById("mack-map"), mapOptions);
+
+      google.maps.event.addListener(map, 'click', function() {
+        infowindow.close();
+      });
+
+      var locations = [
+        ['Me', 40.207918, -85.410883]
+       ];
+
+      /*infowindow = new google.maps.InfoWindow({
+        size: new google.maps.Size(150,50)
+      });*/
+
+      function setMarkers(locations) {
+        for (var i = 0; i < locations.length; i++) {
+          var location = locations[i];
+          var myLatLng = new google.maps.LatLng(location[1], location[2]);
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              animation: google.maps.Animation.DROP,
+              map: map,
+              title: location[0]
+          });
+
+					// Standard markers - if not using infobox
+          google.maps.event.addListener(marker, "click", function () {
+	        map.setCenter(marker.getPosition());
+	        infowindow.setContent(this.html);
+	        infowindow.open(map, this);
+          });
+          gmarkers.push(marker);
+        }
+      }
+
+      // Add the markers
+      setMarkers(locations);
+
+  }
+
+  // add window listener for GMaps
+  google.maps.event.addDomListener(window, 'load', initialize);
+
 });
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-
-        var y = $(this).scrollTop();
-
-        $('.link').each(function (event) {
-            if (y >= $($(this).attr('href')).offset().top - 0) {
-                $('.link').not(this).removeClass('active');
-                $(this).addClass('active');
-            }
-        });
-
-    });
-});
-
-
-
-$(function() {
-		app.init();
-		app.homeNav();
-		app.arrowAnim();
-		app.initInteractive();
-		app.resizeInteractive();
-	});
-
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-17019162-1');ga('send','pageview');
-		
-		
-// Produces width of .barChart
-$(document).ready(function() {
-  $('.graph-bar').each(function() {
-     var dataWidth = $(this).data('value');
-     $(this).css("width", dataWidth + "%");
-  });
-});
-
-// Positioning of .bubbleChart
-$(document).ready(function() {
-  $('.chart-bubble').each(function() {
-    // Bubble Size
-    var bubbleSize = $(this).data('value');    
-    $(this).css("width", function() {
-      return (bubbleSize * 10) + "px"
-    });
-    $(this).css("height", function() {
-      return (bubbleSize * 10) + "px"
-    });
-    
-    // Bubble Position
-    var posX = $(this).data('x');
-    var posY = $(this).data('y');    
-    $(this).css("left", function() {
-      return posX - (bubbleSize * 0.5) + "%"
-    });
-    $(this).css("bottom", function() {
-      return posY - (bubbleSize * 0.5) + "%"
-    });
-  }); 
-});
-	</script>
-</body>
+</script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main-jq.js"></script> <!-- Resource jQuery -->
 </html>
