@@ -65,10 +65,7 @@ for (var i = 0; i < odbl.length; i++) {
 
     PROVIDERS[key].retina = true;
     PROVIDERS[key].attribution = [
-        'Map tiles by <a href="http://stamen.com/">Stamen Design</a>, ',
-        'under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
-        'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, ',
-        'under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+        'Leaflet map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
     ].join("");
 }
 
