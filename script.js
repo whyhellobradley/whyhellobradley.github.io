@@ -38,8 +38,6 @@ function generatePopup(content){
 	popup_content += '<td>' + content['date'] + '</td>';
 	popup_content += '<tr><td><strong>Offense:</strong></td>';
 	popup_content += '<td>' + content['offense'] + '</td>';
-		popup_content += '<tr><td><strong>Case Status:</strong></td>';
-	popup_content += '<td>' + content['status'] + '</td>';
 
 
 	popup_content += '</tr></table>'
