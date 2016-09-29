@@ -13,7 +13,10 @@ var SUBDOMAINS = "a. b. c. d.".split(" "),
             "minZoom":      minZoom,
             "maxZoom":      maxZoom,
             "attribution":  [
-                'Leaflet Map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
+                'Map tiles by <a href="http://stamen.com/">Stamen Design</a>, ',
+                'under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. ',
+                'Data by <a href="http://openstreetmap.org/">OpenStreetMap</a>, ',
+                'under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
             ].join("")
         };
     },
@@ -32,7 +35,10 @@ var SUBDOMAINS = "a. b. c. d.".split(" "),
                 {"lat": 37.684, "lon": -122.313}
             ],
             "attribution": [
-                'Leaflet Map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
+                'Design by Shawn Allen at <a href="http://stamen.com/">Stamen</a>.',
+                'Data courtesy of <a href="http://fuf.net/">FuF</a>,',
+                '<a href="http://www.yellowcabsf.com/">Yellow Cab</a>',
+                '&amp; <a href="http://sf-police.org/">SFPD</a>.'
             ].join(" ")
         }
     };
