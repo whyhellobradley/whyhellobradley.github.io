@@ -13,7 +13,7 @@ var SUBDOMAINS = "a. b. c. d.".split(" "),
             "minZoom":      minZoom,
             "maxZoom":      maxZoom,
             "attribution":  [
-                'Leaflet map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
+                'Map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
             ].join("")
         };
     },
@@ -65,7 +65,7 @@ for (var i = 0; i < odbl.length; i++) {
 
     PROVIDERS[key].retina = true;
     PROVIDERS[key].attribution = [
-        'Leaflet map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
+        'Map by <a href="http://bradleydeanjones.com/">Bradley Dean Jones</a>'
     ].join("");
 }
 
