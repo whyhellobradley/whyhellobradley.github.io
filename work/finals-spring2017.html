@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+<!-- by Aidan Feay - aidanfeay.com -->
+<head>
+<title>Ball State Daily | Find Your Finals</title>
+<link rel="shortcut icon" href="https://farm6.staticflickr.com/5575/13861730454_8a7b78354d_o.png">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<script>
+function getTime(credits, time, day)
+    {
+        var examTime = "not available. Be sure your information looks like the example";
+        day = day.toUpperCase();
+
+        if (time.length < 7)
+            {
+                time = '0' + time;
+            }
+
+        if (credits != 5 && time == "08:00am" && (day == "TR" || day ==""))
+            {
+                examTime = "7:30-9:30am on Wednesday, December 14";
+            }
+        else if (credits == 5 && time == "08:00am")
+            {
+                examTime = "7:30-9:30am on Thursday, December 15 ";
+            }
+        else if (time == "08:00am" && (day == "MWF" || day == "MW" || day == "WF"))
+            {
+                examTime = "7:30-9:30am on Thursday, December 15";
+            }
+        else if (time == "09:00am")
+            {
+                examTime = "7:30-9:30am on Friday, December 16";
+            }
+        else if (credits != 5 && time == "11:00am" && (day == "TR" || day == ""))
+            {
+                examTime = "9:45-11:45am on Tuesday, December 13";
+            }
+        else if (time == "11:00am" && (day == "MWF" || day == "MW" || day == "WF" || day == ""))
+            {
+                examTime = "9:45-11:45am on Thursday, December 15";
+            }
+        else if (time == "10:00am")
+            {
+                examTime = "9:45-11:45am on Wednesday, December 14";
+            }
+        else if (time == "09:30am")
+            {
+                examTime = "9:45-11:45am on Friday, December 16";
+            }
+        else if (time == "12:30pm")
+            {
+                examTime = "12:00-2:00pm on Tuesday, December 13";
+            }
+        else if (time == "12:00pm")
+            {
+                examTime = "12:00-2:00pm on Wednesday, December 14"; 
+            }
+        else if (credits != 5 && time == "02:00pm" && (day == "TR" || day == ""))
+            {
+                examTime = "12:00-2:00pm on Thursday, December 15"; 
+            }
+        else if (time == "02:00pm" && (day == "MWF" || day == "MW" || day == "WF" || day == ""))
+            {
+                examTime = "2:15-4:15pm on Thursday, December 15";
+            }
+        else if (time == "01:00pm" && day != "TR")
+            {
+                examTime = "12:00-2:00pm on Friday, December 16";
+            }
+        else if (time == "01:00pm")
+            {
+                examTime = "12:00-2:00pm on Tuesday, December 13";
+            }
+        else if (time == "03:30pm")
+            {
+                examTime = "2:15-4:15pm on Tuesday, December 13";
+            }
+        else if (time == "03:00pm")
+            {
+                examTime = "2:15-4:15pm on Wednesday, December 14";
+            }
+        else if (time == "04:00pm")
+            {
+                examTime = "2:15-4:15pm on Friday, December 16";
+            }
+        else if (credits != 5 && time == "05:00pm" && (day == "TR" || day == ""))
+            {
+                examTime = "4:30-6:30pm on Tuesday, December 13";
+            }
+        else if (time == "05:00pm" && (day == "MWF" || day == "MW" || day == "WF" || day == ""))
+            {
+                examTime = "4:30-6:30pm on Wednesday, December 14";
+            }
+        else if (time == "06:30pm" && (day == "T" || day == "TR"))
+            {
+                examTime = "7:00-9:00pm on Tuesday, December 13";
+            }
+        else if (time == "06:30pm" && day == "W")
+            {
+                examTime = "7:00-9:00pm on Wednesday, December 14";
+            }
+        else if (time == "06:30pm" && day == "R")
+            {
+                examTime = "7:00-9:00pm on Thursday, December 15";
+            }
+        else if (time == "08:00pm" && day == "TR")
+            {
+                examTime = "7:00-9:00pm on Tuesday, December 13";
+            }
+        else if (time == "08:00pm" && day == "MW")
+            {
+                examTime = "7:00-9:00pm on Wednesday, December 14";
+            }
+
+    document.getElementById('output').innerHTML = "This exam is " + examTime + "."
+    }
+</script>
+<style>
+	.finals {
+		font-family:tahoma, sans-serif;
+		color:#000000;
+		font-size:9pt;
+	}
+
+	.finals a {
+		font-family:tahoma, sans-serif;
+		color:#5C5C5C;
+		font-size:9pt;
+		text-decoration:underline;
+	}
+
+	.finals a:hover {
+		font-family:tahoma, sans-serif;
+		color:#5C5C5C;
+		font-size:9pt;
+		text-decoration:none;
+	}
+
+	.app {
+		width:100%;
+		background:#ffffff;
+		font-family:tahoma, sans-serif;
+		font-size:12pt;
+	}
+
+	button {
+		border:0px;
+		background-color:#339999;
+		color:#ffffff;
+	}
+
+	button:active {
+		border:0px;
+		background-color:#267878;
+		color:#ffffff;
+	}
+
+	input {
+		background-color:#E8E8E8;
+		color:#000000;
+		border:0px;
+		padding:1px;
+	}
+
+	#output {
+		color:#339999;
+		font-size:24px;
+		text-align:center;
+	}
+
+	.source {
+		text-align:right;
+		font-size:9pt;
+		color:#919191;
+	}
+
+	.source a {
+		text-align:right;
+		font-size:9pt;
+		color:#5C5C5C;
+		text-decoration:underline;
+	}
+
+	.source a:hover {
+		text-align:right;
+		font-size:9pt;
+		color:#5C5C5C;
+		text-decoration:none;
+	}
+
+	.navbarbig {
+	background-color: #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 100%;
+	text-align: left;
+	position:relative;
+	display:block;
+	color:#ffffff;
+	font-size:14px;
+	z-index:29;
+	font-family:tahoma, sans-serif;
+	margin-bottom:25px;
+}
+
+.navbarbig a {
+	font-family:tahoma, sans-serif;
+	font-size:14px;
+	color:#ffffff;
+	margin-left:10px;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+.navbarbig a:hover {
+	font-family:tahoma, sans-serif;
+	font-size:14px;
+	color:#ffffff;
+	margin-left:10px;
+	text-decoration:none;
+	border-bottom:1px solid #ffffff;
+	text-transform: uppercase;
+}
+
+.container {
+	text-align:center;
+}
+
+</style>
+</head>
+<body>
+<div class="navbarbig">
+				  <a style="margin-left:20px" href="http://www.ballstatedaily.com">Ball State Daily</a> | Find Your Finals
+				</div>
+<div class="container">
+<div class="app">
+Enter course credits, time and days of the week.<br>
+<span class="finals"><i>Information should look exactly like this: 3 | 8:00am | MWF<br>
+	Remember to include a colon in the time.
+</span>
+</i><br><br>
+<input type="text" size="5" id="credits" placeholder="Credits" value=""><input type="text" size="12" id="time" placeholder="12:00pm" value=""><input type="text" size="9" id="day" placeholder="TR" value="">
+<button onclick="getTime(document.getElementById('credits').value, document.getElementById('time').value, document.getElementById('day').value);">Find exam</button>
+<br><br><div id="output"></div><br><span class="finals"><i>Exact exam times may vary. Consult <a href="http://cms.bsu.edu/-/media/www/departmentalcontent/academicsystems/calendars/2015_16/fall%202016%20spring%202017%20final%20exam%20grid.pdf?la=en">this document</a> or check with a professor if you have concerns.</i></span><br><hr>
+<div class="source">Source: <a href="http://cms.bsu.edu/-/media/www/departmentalcontent/academicsystems/calendars/2015_16/fall%202016%20spring%202017%20final%20exam%20grid.pdf?la=en">Ball State University</a></div>
+<div class="source">Ball State Daily News | <a href="http://www.twitter.com/aidanfeay" target="_blank">Aidan Feay</a></div>
+</div>
+</div>
+</body>
+</html>
